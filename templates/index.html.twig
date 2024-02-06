@@ -1,0 +1,29 @@
+<html>
+    <body>
+
+        <ul>
+            {% for result in resultsGoogle %}
+
+                <li>
+                    <h3>{{ result.title }}</h3>
+                    <p>{{ result.description }}</p>
+                    <a href="{{ result.url }}">Link</a>
+                </li>
+
+            {% endfor %}
+        </ul>
+
+        <ul>
+            {% for result in resultsWikipedia %}
+
+                <li>
+                    <h3>{{ result.title }}</h3>
+                    <p>{{ result.description }}</p>
+                    <a href="{{ result.url }}">Link</a>
+                </li>
+
+            {% endfor %}
+        </ul>
+
+    </body>
+</html>
